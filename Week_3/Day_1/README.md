@@ -1,18 +1,19 @@
 # Day 15 
-## 🖼️ Image Caption Generator with Deep Learning
+## 🧠 Text2SQL via Prompt Engineering
 
-This project generates **natural-language captions for images** using a deep learning architecture combining CNNs and sequence models.
+This project demonstrates how Large Language Models can act as natural-language database interfaces by generating SQL queries from plain-English prompts.
 
 ### 🎯 Objective
-Automatically describe the content of an image in meaningful sentences.
+Translate user questions into optimized SQL queries without manual query writing.
 
 ### 📌 Workflow
-1. Extract visual features using pretrained CNN (VGG/ResNet/Inception)
-2. Preprocess caption text and tokenize
-3. Train an Encoder-Decoder model using LSTM / GRU
-4. Validate using BLEU score
-5. Evaluate captions qualitatively on unseen images
+1. Connect to structured dataset (table schema awareness)
+2. Collect natural-language user prompts
+3. Prompt engineering to guide LLM to generate valid SQL
+4. Execute generated query on the database
+5. Display results and evaluate query correctness
 
 ### 🔍 Key Insights
-- CNN captures spatial structure while LSTM learns language patterns
-- Beam search improves caption fluency compared to greedy decoding
+- Schema-aware prompting improves SQL relevance
+- Query sanitization is essential to avoid malformed outputs
+- Text2SQL reduces the learning curve for non-technical users
